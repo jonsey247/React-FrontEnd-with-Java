@@ -14,3 +14,5 @@ class Tvs extends React.Component {
         );
     }
 }
+
+export default Tvs;

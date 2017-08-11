@@ -4,9 +4,9 @@ import * as actions from '../actions/actions';
 
 class Home extends React.Component {
 
-    componentDidMount() {
-        this.props.fetchTvs();
-    }
+    // componentDidMount() {
+    //     this.props.fetchTvs();
+    // }
 
     render() {
         return (
@@ -22,19 +22,19 @@ class Home extends React.Component {
     }
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        fetchTvs: () => {
-            dispatch(actions.fetchTvs());
-        }
-    };
-}
+// function mapDispatchToProps(dispatch) {
+//     return {
+//         fetchTvs: () => {
+//             dispatch(actions.fetchTvs());
+//         }
+//     };
+// }
 
-function MapStateToProps(state) {
-    return {
-        tvs: state.tvs,
-        loading: state.loading
+// function MapStateToProps(state) {
+//     return {
+//         tvs: state.tvs,
+//         loading: state.loading
 
-    }
-}
-export default connect(MapStateToProps, mapDispatchToProps)(Home); 
+//     }
+//}
+export default Home; 

@@ -14,3 +14,5 @@ class Lamp extends React.Component {
         );
     }
 }
+
+export default Lamp;

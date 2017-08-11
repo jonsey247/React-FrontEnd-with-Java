@@ -14,3 +14,5 @@ class IndervidualTv extends React.Component {
         );
     }
 }
+
+export default IndervidualTv;
