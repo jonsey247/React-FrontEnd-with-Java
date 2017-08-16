@@ -1,13 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import * as actions from '../actions/actions';
 
 class Home extends React.Component {
-
-    // componentDidMount() {
-    //     this.props.fetchTvs();
-    // }
-
     render() {
         return (
             <div className="columns">
@@ -22,19 +15,4 @@ class Home extends React.Component {
     }
 }
 
-// function mapDispatchToProps(dispatch) {
-//     return {
-//         fetchTvs: () => {
-//             dispatch(actions.fetchTvs());
-//         }
-//     };
-// }
-
-// function MapStateToProps(state) {
-//     return {
-//         tvs: state.tvs,
-//         loading: state.loading
-
-//     }
-//}
 export default Home; 
