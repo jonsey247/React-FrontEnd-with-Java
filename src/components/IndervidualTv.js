@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as actions from '../actions/actions';
 import TvTitleBar from './TvTitleBar';
@@ -7,11 +6,11 @@ import TvText from './TvText';
 
 class IndervidualTv extends React.Component {
 
-    componentDidMount() {
+    componentDidMount () {
         this.props.fetchTvsByID(this.props.match.params.tv_id);
     }
 
-    render() {
+    render () {
         return (
             <div className="columns">
                 <div className="column is-three-quarters" id='IndervidualTv'>
@@ -27,7 +26,7 @@ class IndervidualTv extends React.Component {
     }
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps (dispatch) {
     return {
         fetchTvsByID: (id) => {
             dispatch(actions.fetchTvsByID(id));
@@ -35,17 +34,11 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-function MapStateToProps(state) {
+function MapStateToProps (state) {
     return {
         selectedTvs: state.selectedTvs,
         loading: state.loading
     };
 }
-
-IndervidualTv.proptypes = {
-    selectedTvs: PropTypes.object.isRequired,
-    loading: PropTypes.bool.isRequired
-
-};
 
 export default connect(MapStateToProps, mapDispatchToProps)(IndervidualTv); 

@@ -8,7 +8,7 @@ const initialState = {
     error: null
 };
 
-function reducer(prevState = initialState, action) {
+function reducer (prevState = initialState, action) {
     if (!action) return prevState;
 
     if (action.type === types.FETCH_TVS_REQUESTS) {

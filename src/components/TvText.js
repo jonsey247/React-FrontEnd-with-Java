@@ -2,7 +2,7 @@ import React from 'react';
 
 
 class TvText extends React.Component {
-    render() {
+    render () {
         return (
             <div className="articleTitle">
             <p>Wattage: {this.props.wattage}</p>

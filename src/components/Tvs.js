@@ -5,10 +5,10 @@ import * as actions from '../actions/actions';
 
 class Tvs extends React.Component {
 
-    componentDidMount() {
+    componentDidMount () {
         this.props.fetchTvs();
     }
-    render() {
+    render () {
         return (
             <div className="columns">
                 <div className="column is-three-quarters" id='Tvs'>
@@ -27,7 +27,7 @@ class Tvs extends React.Component {
     }
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps (dispatch) {
     return {
         fetchTvs: () => {
             dispatch(actions.fetchTvs());
@@ -35,11 +35,11 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-function MapStateToProps(state) {
+function MapStateToProps (state) {
     return {
         tvs: state.tvs,
         loading: state.loading
 
-    }
+    };
 }
 export default connect(MapStateToProps, mapDispatchToProps)(Tvs); 

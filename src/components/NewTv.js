@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
 import * as actions from '../actions/actions';
 
 class NewTv extends React.Component {
-    constructor(props) {
+    constructor (props) {
         super(props);
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }
-    render() {
+    render () {
         return (
             <div className="newTv">
                 <h3>Add a new TV:</h3>
@@ -23,7 +23,7 @@ class NewTv extends React.Component {
         );
     }
 
-    handleSubmit(event) {
+    handleSubmit (event) {
         event.preventDefault();
         let tvModelValue = event.target[0].value;
         let wattageValue = event.target[1].value;
@@ -36,7 +36,7 @@ class NewTv extends React.Component {
     }
 }
 
-function mapDispatchToProps(dispatch) {
+function mapDispatchToProps (dispatch) {
     return {
         postnewTv: function (newTv) {
             dispatch(actions.addTv(newTv));
@@ -44,7 +44,7 @@ function mapDispatchToProps(dispatch) {
     };
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
     return {
         tvModel: state.tvModel,
         wattage: state.wattage

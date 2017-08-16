@@ -4,7 +4,7 @@ import { ROOT } from '../../config';
 
 
 // fetchTvs
-export function fetchTvs() {
+export function fetchTvs () {
     return function (dispatch) {
         dispatch(fetchTvsRequest());
         axios.get(`${ROOT}/tvs`)
@@ -18,20 +18,20 @@ export function fetchTvs() {
     };
 }
 
-export function fetchTvsRequest() {
+export function fetchTvsRequest () {
     return {
         type: types.FETCH_TVS_REQUESTS
     };
 }
 
-export function fetchTvsSuccess(tvs) {
+export function fetchTvsSuccess (tvs) {
     return {
         type: types.FETCH_TVS_SUCCESS,
         payload: tvs
     };
 }
 
-export function fetchTvsError(error) {
+export function fetchTvsError (error) {
     return {
         type: types.FETCH_TVS_ERROR,
         payload: error
@@ -39,7 +39,7 @@ export function fetchTvsError(error) {
 }
 
 // fetchTvsByID
-export function fetchTvsByID(id) {
+export function fetchTvsByID (id) {
     return function (dispatch) {
         dispatch(fetchTvsByIDRequest(id));
         axios.get(`${ROOT}/tvs/${id}`)
@@ -47,27 +47,27 @@ export function fetchTvsByID(id) {
                 dispatch(fetchTvsByIDSuccess(res.data));
             })
             .catch(err => {
-                console.log(err)
+                console.log(err);
                 dispatch(fetchTvsByIDError(err));
             });
     };
 }
 
-export function fetchTvsByIDRequest(id) {
+export function fetchTvsByIDRequest (id) {
     return {
         type: types.FETCH_TVS_BY_ID_REQUESTS,
         id: id
     };
 }
 
-export function fetchTvsByIDSuccess(tv) {
+export function fetchTvsByIDSuccess (tv) {
     return {
         type: types.FETCH_TVS_BY_ID_SUCCESS,
         payload: tv
     };
 }
 
-export function fetchTvsByIDError(error) {
+export function fetchTvsByIDError (error) {
     return {
         type: types.FETCH_TVS_BY_ID_ERROR,
         payload: error
@@ -75,7 +75,7 @@ export function fetchTvsByIDError(error) {
 }
 
 // addnewTv
-export function addTv(data) {
+export function addTv (data) {
     return function (dispatch) {
         dispatch(addTvPost(data));
         axios.post(`${ROOT}/tvs/-1`, data)
@@ -89,7 +89,7 @@ export function addTv(data) {
     };
 }
 
-export function addTvPost(tvModel, wattage) {
+export function addTvPost (tvModel, wattage) {
     return {
         type: types.ADD_TV_POST,
         tvModel: tvModel,
@@ -105,7 +105,7 @@ export function addTvPost(tvModel, wattage) {
 //     };
 // }
 
-export function addTvError(error) {
+export function addTvError (error) {
     return {
         type: types.ADD_TV_ERROR,
         payload: error

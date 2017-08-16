@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Lamp extends React.Component {
-    render() {
+    render () {
         return (
             <div className="columns">
                 <div className="column is-three-quarters" id='Lamp'>
