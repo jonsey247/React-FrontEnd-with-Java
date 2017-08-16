@@ -9,6 +9,7 @@ import Home from './components/Home';
 import IndervidualTv from './components/IndervidualTv';
 import Lamp from './components/Lamp';
 import Tvs from './components/Tvs';
+import NewTv from './components/NewTv';
 import reducer from './reducer/reducer';
 import createBrowserHistory from 'history/createBrowserHistory';
 
@@ -21,9 +22,10 @@ ReactDOM.render(
             <App>
                 <Switch>
                     <Route exact path='/' component={Home} />
-                    <Route path='/tvs' component={Tvs} />
+                    <Route exact path='/tvs' component={Tvs} />
                     <Route path='/tvs/:tv_id' component={IndervidualTv} />
                     <Route path='/lamp' component={Lamp} />
+                    <Route path='/newtv' component={NewTv} />
                 </Switch>
             </App>
         </Router>
