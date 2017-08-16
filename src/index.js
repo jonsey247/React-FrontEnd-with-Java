@@ -7,7 +7,6 @@ import thunk from 'redux-thunk';
 import App from './components/App';
 import Home from './components/Home';
 import IndervidualTv from './components/IndervidualTv';
-import Lamp from './components/Lamp';
 import Tvs from './components/Tvs';
 import NewTv from './components/NewTv';
 import reducer from './reducer/reducer';
@@ -24,7 +23,6 @@ ReactDOM.render(
                     <Route exact path='/' component={Home} />
                     <Route exact path='/tvs' component={Tvs} />
                     <Route path='/tvs/:tv_id' component={IndervidualTv} />
-                    <Route path='/lamp' component={Lamp} />
                     <Route path='/newtv' component={NewTv} />
                 </Switch>
             </App>

@@ -33,3 +33,27 @@
    color:#fff;
    text-shadow: -1px -1px 3px #000;
  }
+
+ /* ArticlePage  */
+
+.IndervidualTv {
+  font-size: 20px;
+}
+
+.TvTitlebar {
+  margin-bottom:20px;
+}
+
+
+.newTv {
+  width:39%;
+  display:flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.newTv form {
+  margin:0;
+  padding:0;
+}
