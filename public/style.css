@@ -1,0 +1,35 @@
+ nav {
+   display:flex;
+   flex-flow: row nowrap;
+   justify-content: flex-start;
+   align-items:flex-end;
+   margin-bottom:20px;
+   padding:0;
+   height: 60px;
+   box-shadow: 1px 1px 5px #000;
+   color:#FFF;
+ }
+ 
+ nav .topicLink {
+   background-color:#fff;
+   padding:10px;
+   margin:0 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+   box-shadow: -1px -1px 3px #000;
+ }
+ 
+ nav .topicLink:hover {
+   background-color: rgba(200, 200, 255, 0.5);
+   box-shadow: inset 1px 1px 3px #000;
+ }
+ 
+ nav h1 {
+   font-family: 'Zilla Slab', serif;
+   margin: 20px 40px;
+   align-self:center;
+   font-size:50px;
+   line-height:60px;
+   color:#fff;
+   text-shadow: -1px -1px 3px #000;
+ }
