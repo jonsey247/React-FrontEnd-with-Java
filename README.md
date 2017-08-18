@@ -10,4 +10,4 @@ Again in the command line type in $ npm run dev.
 
 This will start up the front end and tell you which port it is listening on.
 
-In the browser type in "localhost:<which ever port the terminal says>"
+In the browser type in "localhost:[which ever port the terminal says]"
