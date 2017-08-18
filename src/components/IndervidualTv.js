@@ -12,7 +12,7 @@ class IndervidualTv extends React.Component {
 
     render () {
         return (
-            <div className="columns">
+            <div className="box">
                 <div className="column is-three-quarters" id='IndervidualTv'>
                     <TvTitleBar
                         model={this.props.selectedTvs.tvModel}

@@ -10,12 +10,12 @@ class NewTv extends React.Component {
     }
     render () {
         return (
-            <div className="newTv">
+            <div className="box">
                 <h3>Add a new TV:</h3>
                 <form onSubmit={this.handleSubmit}>
                     <input id="tvModel-input" className="input" type="text" placeholder="tvModel" />
                     <input id="wattage-input" className="input" type="number" placeholder="wattage" />
-                    <button className="submitButton" type="submit">
+                    <button className="button is-primary button is-small">
                         Submit
                     </button>
                 </form>

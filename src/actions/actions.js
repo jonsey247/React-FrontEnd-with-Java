@@ -83,7 +83,7 @@ export function addTv (data) {
                 console.log('new tv res: ', res);
             })
             .catch(err => {
-                console.log(err);
+                alert(err.response.data.errors[0].defaultMessage);
                 dispatch(addTvError(err));
             });
     };

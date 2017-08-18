@@ -1,4 +1,6 @@
- nav {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Zilla+Slab:700');
+
+nav {
    display:flex;
    flex-flow: row nowrap;
    justify-content: flex-start;
@@ -34,7 +36,7 @@
    text-shadow: -1px -1px 3px #000;
  }
 
- /* ArticlePage  */
+ /* tvPage  */
 
 .IndervidualTv {
   font-size: 20px;
@@ -45,15 +47,11 @@
 }
 
 
-.newTv {
-  width:39%;
+.box {
+  width:35%;
   display:flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 
-.newTv form {
-  margin:0;
-  padding:0;
-}
