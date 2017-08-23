@@ -9,7 +9,7 @@ node {
    }
   
    stage('Build') {
-       sh "npm install  "
+       sh "npm install"
    }
 
    stage('Docker Deploy') {
