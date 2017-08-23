@@ -1,4 +1,4 @@
 module.exports = {
-   ROOT: 'http://localhost:8080',
+   ROOT: 'http://ec2-34-253-96-243.eu-west-1.compute.amazonaws.com:8081/tvs',
    USERNAME: 'jacob'
  };
