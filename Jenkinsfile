@@ -8,11 +8,16 @@ node {
       git 'https://github.com/jonsey247/React-FrontEnd-with-Java.git'
    }
   
-   stage('Build') {
-       sh "npm install"
+   stage('Docker Build') {
+       sh "docker build -t frontend ."
    }
 
-   stage('Docker Deploy') {
-       sh "npm run dev"
+   stage('Stop app') {
+       sh "docker stop frontend || true"
+       sh "docker rm frontend || true"
+   }
+
+   stage('Deploy') {
+       sh "docker run -d --name frontend -p 80:9090 frontend"
    }
 }
